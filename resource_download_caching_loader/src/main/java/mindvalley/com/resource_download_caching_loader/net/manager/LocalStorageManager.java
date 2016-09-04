@@ -19,7 +19,7 @@ import retrofit2.Call;
 import retrofit2.Response;
 /**
  * @author Sirajuddin
- * @purpose
+ * @purpose manages caching of resource data in local memory.
  * @since 03-09-2016
  */
 

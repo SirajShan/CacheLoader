@@ -21,7 +21,6 @@ import mindvalley.com.mindvalley_sirajuddin_android_test.R;
 public class MasterActivity extends AppCompatActivity {
     @LayoutRes
     int ContentView;
-    public MasterActivity(){}
     public MasterActivity(@LayoutRes int ContentView)
     {
         this.ContentView= ContentView;

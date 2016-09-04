@@ -31,10 +31,6 @@ public class DownloadPresenter {
         downloadManager.grabResource(uri,handler,null);
     }
 
-    public void grabResource(int resId, final ResourceHandlerInterface handler) {
-        downloadManager.grabResource(resId,handler,null);
-    }
-
     public List<UserInfo> deserializeToBoards(String serialized){
         Type type = new TypeToken<List<UserInfo>>() {
         }.getType();

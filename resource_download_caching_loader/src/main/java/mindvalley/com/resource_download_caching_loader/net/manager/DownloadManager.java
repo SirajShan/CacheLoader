@@ -12,7 +12,7 @@ import retrofit2.Callback;
 import retrofit2.Response;
 /**
  * @author Sirajuddin
- * @purpose
+ * @purpose download and cache the data in memory
  * @since 03-09-2016
  */
 
@@ -66,13 +66,4 @@ public class DownloadManager {
         }
         grabResourceFromRemote(uri, handler, cancel);
     }
-
-    public void grabResource(int resource, final ResourceHandlerInterface handler, View cancel) {
-        byte[] bytes= localStorageManager.grabResourceFromCache(String.valueOf(resource));
-        if(bytes!=null) {
-            handler.downLoadedResource(bytes);
-            return;
-        }
-    }
-
 }
